@@ -3,6 +3,12 @@
 Debug utilities for jscodeshift
 
 #### Usage:
+Install
+```sh
+yarn add --dev jscodeshift-debug
+```
+
+And use
 ```ts
 import debug from 'jscodeshift-debug
 

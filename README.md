@@ -22,6 +22,7 @@ sinon.stub(I18n, 'extend');
 ```ts
 import core, { API, FileInfo } from 'jscodeshift'
 
+// basic jscodeshift transformer
 export default function transformer(fileInfo: FileInfo, api: API, options) {
   const j = api.jscodeshift
   const ast = j(fileInfo.source)
@@ -40,7 +41,7 @@ export default function transformer(fileInfo: FileInfo, api: API, options) {
       },
     })
     .forEach((nodepath) => {
-      // uage:
+      // usage:
       debug(np)
     })
 }

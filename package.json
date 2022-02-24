@@ -1,0 +1,26 @@
+{
+  "name": "jscodeshift-debug",
+  "version": "1.0.0",
+  "description": "Debug utilities for jscodeshift",
+  "main": "dist/debug.js",
+  "types": "debug.d.ts",
+  "scripts": {
+    "build": "yarn tsc --declaration --allowJs --emitDeclarationOnly && yarn tsc --outDir dist",
+    "test": "TODO"
+  },
+  "keywords": [
+    "jscodeshift",
+    "debug",
+    "tree"
+  ],
+  "author": "catc",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^5.0.0",
+    "jscodeshift": "^0.13.1"
+  },
+  "devDependencies": {
+    "@types/jscodeshift": "^0.11.3",
+    "typescript": "^4.5.5"
+  }
+}

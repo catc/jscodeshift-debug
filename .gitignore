@@ -2,3 +2,4 @@ node_modules/
 dist/
 .vscode/
 z_*
+debug.d.ts

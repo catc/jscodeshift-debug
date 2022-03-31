@@ -79,7 +79,7 @@ export default function debug(
   }
 }
 
-function validateNode(n: unknown): n is Node | ASTPath<Node> {
+function validateNode(n: any): n is Node | ASTPath<Node> {
   if (Array.isArray(n)) {
     throw new Error('[debug] Must provide single path')
   }
